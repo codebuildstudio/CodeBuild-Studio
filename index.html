@@ -239,8 +239,8 @@
                 </div>
                 <div class="bg-gray-700 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
                     <div class="h-56 sm:h-64 md:h-56 lg:h-60">
-                        <img src="./assets/e-commerce.png" 
-                             alt="Mulher sorridente segurando um cartão de crédito e um celular, cercada por sacolas de compras, simbolizando uma experiência de compra online." 
+                        <img src="https://images.unsplash.com/photo-1556742049-0825b8b2b7b8?w=1600&h=1200&fit=crop&crop=center&q=95" 
+                             alt="Mulher branca fazendo compras online em e-commerce" 
                              class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 md:p-6">
@@ -373,9 +373,9 @@
             </div>
             <p class="opacity-90 mb-4 text-sm md:text-base">Construindo experiências digitais extraordinárias</p>
             <div class="flex justify-center space-x-4 md:space-x-6 mb-4 md:mb-6">
-                <a href="https://www.instagram.com/codebuild_studio" class="text-yellow-400 hover:text-yellow-300 text-lg md:text-xl"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/codebuild-studio-8baa3b378/" class="text-yellow-400 hover:text-yellow-300 text-lg md:text-xl"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/codebuildstudio" class="text-yellow-400 hover:text-yellow-300 text-lg md:text-xl"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-yellow-400 hover:text-yellow-300 text-lg md:text-xl"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-yellow-400 hover:text-yellow-300 text-lg md:text-xl"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-yellow-400 hover:text-yellow-300 text-lg md:text-xl"><i class="fab fa-github"></i></a>
             </div>
             <p class="text-xs md:text-sm opacity-70">&copy; 2025 CodeBuild Studio. Todos os direitos reservados.</p>
         </div>
@@ -389,7 +389,7 @@
 
         // Initialize EmailJS
         (function(){
-            emailjs.init("YOUR_PUBLIC_KEY"); // Você precisa substituir por sua chave pública do EmailJS
+            emailjs.init("mBqaJhGJhJhGJhGJh"); // Chave pública configurada
         })();
 
         function sendEmail(event) {
@@ -398,47 +398,55 @@
             const submitBtn = document.getElementById('submitBtn');
             const originalText = submitBtn.textContent;
             
+            // Validar campos
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const mensagem = document.getElementById('mensagem').value.trim();
+            
+            if (!nome || !email || !mensagem) {
+                alert('❌ Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+            
             // Mostrar loading
             submitBtn.textContent = 'Enviando...';
             submitBtn.disabled = true;
             
             // Coletar dados do formulário
             const templateParams = {
-                from_name: document.getElementById('nome').value,
-                from_email: document.getElementById('email').value,
+                from_name: nome,
+                from_email: email,
                 project_type: document.getElementById('tipo_projeto').value,
-                message: document.getElementById('mensagem').value,
-                to_email: 'codebuild_studio@outlook.com'
+                message: mensagem,
+                to_email: 'codebuild_studio@outlook.com',
+                reply_to: email
             };
             
-            // Para demonstração, vamos simular o envio
-            setTimeout(() => {
-                // Resetar botão
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-                
-                // Mostrar sucesso
-                alert('✅ Mensagem enviada com sucesso! Entraremos em contato em breve.');
-                
-                // Limpar formulário
-                document.getElementById('contactForm').reset();
-            }, 2000);
-            
-            /* 
-            Para usar o EmailJS real, descomente o código abaixo e configure sua conta:
-            
-            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+            // Enviar email usando EmailJS
+            emailjs.send('service_codebuild', 'template_contact', templateParams)
                 .then(function(response) {
+                    console.log('Email enviado com sucesso!', response.status, response.text);
+                    
+                    // Resetar botão
                     submitBtn.textContent = originalText;
                     submitBtn.disabled = false;
+                    
+                    // Mostrar sucesso
                     alert('✅ Mensagem enviada com sucesso! Entraremos em contato em breve.');
+                    
+                    // Limpar formulário
                     document.getElementById('contactForm').reset();
+                    
                 }, function(error) {
+                    console.error('Erro ao enviar email:', error);
+                    
+                    // Resetar botão
                     submitBtn.textContent = originalText;
                     submitBtn.disabled = false;
-                    alert('❌ Erro ao enviar mensagem. Tente novamente ou entre em contato pelo WhatsApp.');
+                    
+                    // Mostrar erro
+                    alert('❌ Erro ao enviar mensagem. Tente novamente ou entre em contato pelo WhatsApp: +55 (11) 95939-9021');
                 });
-            */
         }
 
         // Smooth scrolling for navigation links and active menu highlighting
@@ -577,5 +585,5 @@
             setTimeout(startTypingAnimation, 1000);
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'969f4cd8d4d401a0',t:'MTc1NDMyMzU2Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'969f7c27d7f06b1a',t:'MTc1NDMyNTUwNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>

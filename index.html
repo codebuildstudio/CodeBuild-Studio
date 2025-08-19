@@ -9,24 +9,18 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
-    <!-- Botão Flutuante WhatsApp -->
-    <a href="https://wa.me/+5511959399021?text=Olá%20CodeBuild%20Studio!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20criação%20de%20site.%20Pode%20me%20ajudar?" 
+    <a href="https://wa.me/+5511959399021?text=Olá%20CodeBuild%20Studio!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20criação%20de%20site.%20Pode%20me%20ajudar?"
        class="whatsapp-flutuante"
        target="_blank"
        title="Fale conosco no WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
-
-    <!-- Cabeçalho -->
     <header class="fundo-gradiente">
         <nav class="container">
             <div class="container-navegacao">
-                <!-- Logo -->
                 <div class="logo">
                     <img src="./assets/logo-transparente.png" alt="CodeBuild Studio Logo">
                 </div>
-
-                <!-- Navegação -->
                 <div class="links-navegacao">
                     <a href="#home" class="link-navegacao">Início</a>
                     <a href="#about" class="link-navegacao">Sobre</a>
@@ -34,14 +28,10 @@
                     <a href="#portfolio" class="link-navegacao">Portfólio</a>
                     <a href="#contact" class="link-navegacao">Contato</a>
                 </div>
-
-                <!-- Botão Menu Mobile -->
                 <button class="botao-menu-mobile" onclick="alternarMenuMobile()">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
-
-            <!-- Menu Mobile -->
             <div id="menuMobile" class="menu-mobile">
                 <a href="#home" class="link-navegacao">Início</a>
                 <a href="#about" class="link-navegacao">Sobre</a>
@@ -51,8 +41,6 @@
             </div>
         </nav>
     </header>
-
-    <!-- Seção Hero -->
     <section id="home" class="hero fundo-codigo">
         <div class="container">
             <h2>
@@ -67,24 +55,20 @@
             </div>
         </div>
     </section>
-
-    <!-- Seção Sobre -->
     <section id="about" class="secao secao-fundo-cinza">
         <div class="container">
             <h2 class="titulo-secao"><span class="destaque">Sobre</span></h2>
-            
             <div class="grade-sobre">
-                <!-- Texto Sobre -->
                 <div class="texto-sobre">
                     <h3>Nossa História</h3>
                     <p>
-                        O CodeBuild Studio nasceu da paixão por construir experiências digitais extraordinárias. 
-                        Somos especialistas em desenvolver sites que não apenas impressionam visualmente, mas também 
+                        O CodeBuild Studio nasceu da paixão por construir experiências digitais extraordinárias.
+                        Somos especialistas em desenvolver sites que não apenas impressionam visualmente, mas também
                         geram resultados reais para nossos clientes.
                     </p>
                     <p>
-                        Criamos uma metodologia única que combina design moderno, código limpo 
-                        e estratégias de conversão para entregar sites que realmente fazem a diferença no 
+                        Criamos uma metodologia única que combina design moderno, código limpo
+                        e estratégias de conversão para entregar sites que realmente fazem a diferença no
                         mercado digital.
                     </p>
                     <div class="recurso-sobre">
@@ -97,22 +81,16 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Visual Sobre -->
                 <div class="visual-sobre">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=1200&fit=crop&crop=center&q=95" 
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=1200&fit=crop&crop=center&q=95"
                          alt="Equipe trabalhando em desenvolvimento web">
                     <h3>Inovação & Tecnologia</h3>
                     <p>
-                        Nossa equipe trabalha com as mais modernas tecnologias para criar sites rápidos, 
+                        Nossa equipe trabalha com as mais modernas tecnologias para criar sites rápidos,
                         seguros e otimizados para todos os dispositivos.
                     </p>
                 </div>
             </div>
-
-
-
-            <!-- Missão e Valores -->
             <div class="grade-valores">
                 <div class="cartao-valor amarelo">
                     <div class="icone-valor amarelo">
@@ -120,7 +98,7 @@
                     </div>
                     <h3>Missão</h3>
                     <p>
-                        Democratizar a presença digital, oferecendo sites profissionais 
+                        Democratizar a presença digital, oferecendo sites profissionais
                         e acessíveis para empresas de todos os tamanhos.
                     </p>
                 </div>
@@ -130,7 +108,7 @@
                     </div>
                     <h3>Visão</h3>
                     <p>
-                        Ser referência em criação de sites no Brasil, reconhecida pela 
+                        Ser referência em criação de sites no Brasil, reconhecida pela
                         qualidade, inovação e resultados entregues.
                     </p>
                 </div>
@@ -140,22 +118,20 @@
                     </div>
                     <h3>Valores</h3>
                     <p>
-                        Transparência, qualidade, inovação e compromisso com o sucesso 
+                        Transparência, qualidade, inovação e compromisso com o sucesso
                         de cada cliente que confia em nosso trabalho.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Seção de Serviços -->
     <section id="services" class="secao secao-fundo-cinza">
         <div class="container">
             <h2 class="titulo-secao"><span class="destaque">Serviços</span></h2>
             <div class="grade">
                 <div class="cartao cartao-servicos">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600&h=1200&fit=crop&crop=center&q=95" 
-                         alt="Desenvolvimento de sites profissionais" 
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600&h=1200&fit=crop&crop=center&q=95"
+                         alt="Desenvolvimento de sites profissionais"
                          class="imagem-cartao">
                     <div class="conteudo-cartao">
                         <h3 class="titulo-cartao">Sites Institucionais</h3>
@@ -163,8 +139,8 @@
                     </div>
                 </div>
                 <div class="cartao cartao-servicos">
-                    <img src="./assets/e-commerce.png" 
-                         alt="Mulher sorridente fazendo compras online em e-commerce" 
+                    <img src="./assets/e-commerce.png"
+                         alt="Mulher sorridente fazendo compras online em e-commerce"
                          class="imagem-cartao">
                     <div class="conteudo-cartao">
                         <h3 class="titulo-cartao">E-commerce</h3>
@@ -172,8 +148,8 @@
                     </div>
                 </div>
                 <div class="cartao cartao-servicos">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&h=1200&fit=crop&crop=center&q=95" 
-                         alt="Marketing digital e landing pages" 
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&h=1200&fit=crop&crop=center&q=95"
+                         alt="Marketing digital e landing pages"
                          class="imagem-cartao">
                     <div class="conteudo-cartao">
                         <h3 class="titulo-cartao">Landing Pages</h3>
@@ -183,15 +159,13 @@
             </div>
         </div>
     </section>
-
-    <!-- Seção de Portfólio -->
     <section id="portfolio" class="secao secao-fundo-escuro">
         <div class="container">
             <h2 class="titulo-secao"><span class="destaque">Portfólio</span></h2>
             <div class="grade">
                 <div class="cartao cartao-portfolio">
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&h=1200&fit=crop&crop=center&q=95" 
-                         alt="Site corporativo moderno" 
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&h=1200&fit=crop&crop=center&q=95"
+                         alt="Site corporativo moderno"
                          class="imagem-cartao">
                     <div class="conteudo-cartao">
                         <h3 class="titulo-cartao">Site Corporativo</h3>
@@ -199,8 +173,8 @@
                     </div>
                 </div>
                 <div class="cartao cartao-portfolio">
-                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600&h=1200&fit=crop&crop=center&q=95" 
-                         alt="Loja virtual de roupas" 
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600&h=1200&fit=crop&crop=center&q=95"
+                         alt="Loja virtual de roupas"
                          class="imagem-cartao">
                     <div class="conteudo-cartao">
                         <h3 class="titulo-cartao">Loja Virtual</h3>
@@ -208,8 +182,8 @@
                     </div>
                 </div>
                 <div class="cartao cartao-portfolio">
-                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&h=1200&fit=crop&crop=center&q=95" 
-                         alt="Site de restaurante com cardápio" 
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&h=1200&fit=crop&crop=center&q=95"
+                         alt="Site de restaurante com cardápio"
                          class="imagem-cartao">
                     <div class="conteudo-cartao">
                         <h3 class="titulo-cartao">Site Restaurante</h3>
@@ -219,13 +193,10 @@
             </div>
         </div>
     </section>
-
-    <!-- Seção de Contato -->
     <section id="contact" class="secao secao-fundo-cinza">
         <div class="container">
             <h2 class="titulo-secao"><span class="destaque">Contato</span></h2>
             <div class="grade-contato">
-                <!-- Informações de Contato -->
                 <div class="info-contato">
                     <h3>Vamos conversar sobre seu projeto!</h3>
                     <div class="item-contato">
@@ -241,8 +212,6 @@
                         <span>Segunda a Sexta: 9h às 18h | Sábados: 9h às 13h</span>
                     </div>
                 </div>
-
-                <!-- Formulário de Contato -->
                 <div class="formulario-contato">
                     <form id="formularioContato" onsubmit="enviarEmail(event)">
                         <div class="grupo-formulario">
@@ -275,8 +244,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Rodapé -->
     <footer class="fundo-codigo">
         <div class="container">
             <div class="logo-rodape">
@@ -292,7 +259,5 @@
         </div>
     </footer>
     <script src="./js/script.js"></script>
-
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96b078fdf121f22d',t:'MTc1NDUwMzYzMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
 </body>
 </html>

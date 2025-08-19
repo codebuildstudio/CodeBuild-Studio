@@ -309,7 +309,7 @@
         }
 
         .visual-sobre {
-            background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-primaria-hover) 100%);
+            background: var( --fundo-gradiente);
             padding: var(--espacamento-grande);
             border-radius: var(--borda-radius-grande);
             text-align: center;
@@ -327,12 +327,12 @@
         .visual-sobre h3 {
             font-size: var(--fonte-titulo-pequeno);
             font-weight: bold;
-            color: var(--fundo-escuro);
+            color: white;
             margin-bottom: var(--espacamento-normal);
         }
 
         .visual-sobre p {
-            color: var(--fundo-escuro);
+            color: white;
             opacity: 0.9;
             font-size: var(--fonte-normal);
             margin: 0;

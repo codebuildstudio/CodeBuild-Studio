@@ -9,6 +9,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
+    <!-- Botão Flutuante WhatsApp -->
     <a href="https://wa.me/+5511959399021?text=Olá%20CodeBuild%20Studio!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20criação%20de%20site.%20Pode%20me%20ajudar?" 
        class="whatsapp-flutuante"
        target="_blank"
@@ -16,12 +17,16 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Cabeçalho -->
     <header class="fundo-gradiente">
         <nav class="container">
             <div class="container-navegacao">
+                <!-- Logo -->
                 <div class="logo">
                     <img src="./assets/logo-transparente.png" alt="CodeBuild Studio Logo">
                 </div>
+
+                <!-- Navegação -->
                 <div class="links-navegacao">
                     <a href="#home" class="link-navegacao">Início</a>
                     <a href="#about" class="link-navegacao">Sobre</a>
@@ -29,10 +34,14 @@
                     <a href="#portfolio" class="link-navegacao">Portfólio</a>
                     <a href="#contact" class="link-navegacao">Contato</a>
                 </div>
+
+                <!-- Botão Menu Mobile -->
                 <button class="botao-menu-mobile" onclick="alternarMenuMobile()">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
+
+            <!-- Menu Mobile -->
             <div id="menuMobile" class="menu-mobile">
                 <a href="#home" class="link-navegacao">Início</a>
                 <a href="#about" class="link-navegacao">Sobre</a>
@@ -43,6 +52,7 @@
         </nav>
     </header>
 
+    <!-- Seção Hero -->
     <section id="home" class="hero fundo-codigo">
         <div class="container">
             <h2>
@@ -58,12 +68,15 @@
         </div>
     </section>
 
+    <!-- Seção Sobre -->
     <section id="about" class="secao secao-fundo-cinza">
         <div class="container">
             <h2 class="titulo-secao"><span class="destaque">Sobre</span></h2>
             
             <div class="grade-sobre">
+                <!-- Texto Sobre -->
                 <div class="texto-sobre">
+                    <h3>Nossa História</h3>
                     <p>
                         O CodeBuild Studio nasceu da paixão por construir experiências digitais extraordinárias. 
                         Somos especialistas em desenvolver sites que não apenas impressionam visualmente, mas também 
@@ -85,6 +98,7 @@
                     </div>
                 </div>
                 
+                <!-- Visual Sobre -->
                 <div class="visual-sobre">
                     <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=1200&fit=crop&crop=center&q=95" 
                          alt="Equipe trabalhando em desenvolvimento web">
@@ -96,6 +110,9 @@
                 </div>
             </div>
 
+
+
+            <!-- Missão e Valores -->
             <div class="grade-valores">
                 <div class="cartao-valor amarelo">
                     <div class="icone-valor amarelo">
@@ -131,6 +148,7 @@
         </div>
     </section>
 
+    <!-- Seção de Serviços -->
     <section id="services" class="secao secao-fundo-cinza">
         <div class="container">
             <h2 class="titulo-secao"><span class="destaque">Serviços</span></h2>
@@ -166,6 +184,7 @@
         </div>
     </section>
 
+    <!-- Seção de Portfólio -->
     <section id="portfolio" class="secao secao-fundo-escuro">
         <div class="container">
             <h2 class="titulo-secao"><span class="destaque">Portfólio</span></h2>
@@ -192,20 +211,21 @@
                     <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&h=1200&fit=crop&crop=center&q=95" 
                          alt="Site de restaurante com cardápio" 
                          class="imagem-cartao">
-                        <div class="conteudo-cartao">
-                            <h3 class="titulo-cartao">Site Restaurante</h3>
-                            <p class="texto-cartao">Site com cardápio online e sistema de pedidos</p>
-                        </div>
+                    <div class="conteudo-cartao">
+                        <h3 class="titulo-cartao">Site Restaurante</h3>
+                        <p class="texto-cartao">Site com cardápio online e sistema de pedidos</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Seção de Contato -->
     <section id="contact" class="secao secao-fundo-cinza">
         <div class="container">
             <h2 class="titulo-secao"><span class="destaque">Contato</span></h2>
             <div class="grade-contato">
+                <!-- Informações de Contato -->
                 <div class="info-contato">
                     <h3>Vamos conversar sobre seu projeto!</h3>
                     <div class="item-contato">
@@ -222,6 +242,7 @@
                     </div>
                 </div>
 
+                <!-- Formulário de Contato -->
                 <div class="formulario-contato">
                     <form id="formularioContato" onsubmit="enviarEmail(event)">
                         <div class="grupo-formulario">
@@ -255,6 +276,7 @@
         </div>
     </section>
 
+    <!-- Rodapé -->
     <footer class="fundo-codigo">
         <div class="container">
             <div class="logo-rodape">
@@ -262,46 +284,15 @@
             </div>
             <p class="texto-rodape">Construindo experiências digitais extraordinárias.</p>
             <div class="social-rodape">
-                <a href="https://www.instagram.com/codebuild_studio"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/codebuildstudio"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
             </div>
             <p class="copyright-rodape">&copy; 2025 CodeBuild Studio. Todos os direitos reservados.</p>
         </div>
     </footer>
     <script src="./js/script.js"></script>
-    <script>
-        (function(){
-            function c(){
-                var b=a.contentDocument||a.contentWindow.document;
-                if(b){
-                    var d=b.createElement('script');
-                    d.innerHTML="window.__CF$cv$params={r:'96b078fdf121f22d',t:'MTc1NDUwMzYzMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
-                    b.getElementsByTagName('head')[0].appendChild(d)
-                }
-            }
-            if(document.body){
-                var a=document.createElement('iframe');
-                a.height=1;a.width=1;
-                a.style.position='absolute';
-                a.style.top=0;a.style.left=0;
-                a.style.border='none';
-                a.style.visibility='hidden';
-                document.body.appendChild(a);
-                if('loading'!==document.readyState)c();
-                else if(window.addEventListener)
-                    document.addEventListener('DOMContentLoaded',c);
-                else{
-                    var e=document.onreadystatechange||function(){};
-                    document.onreadystatechange=function(b){
-                        e(b);
-                        'loading'!==document.readyState&&(document.onreadystatechange=e,c())
-                    }
-                }
-            }
-        })();
-    </script>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96b078fdf121f22d',t:'MTc1NDUwMzYzMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
 </body>
 </html>
-
-

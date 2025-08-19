@@ -38,12 +38,12 @@ function alternarMenuMobile() {
                 from_email: email,
                 project_type: document.getElementById('tipoProjeto').value,
                 message: mensagem,
-                to_email: 'codebuild_studio@outlook.com',
+                to_email: 'contato@codebuildstudio.com.br',
                 reply_to: email
             };
             
             // Enviar email usando EmailJS
-            emailjs.send('service_kb9okpm', 'template_xnijapq', parametrosTemplate)
+            emailjs.send('service_kkacw8s', 'template_xnijapq', parametrosTemplate)
                 .then(function(response) {
                     console.log('Email enviado com sucesso!', response.status, response.text);
                     
